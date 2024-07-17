@@ -83,7 +83,6 @@ public class Click implements Listener {
             Entity entity = player.getTargetEntity(50);
             if (entity == null || entity instanceof Player || entity instanceof WitherSkeleton) return;
 
-            player.sendMessage("1");
             if (player.isSneaking()) {
                 if (entity == null || entity instanceof Player || entity instanceof WitherSkeleton) {
 
@@ -92,9 +91,7 @@ public class Click implements Listener {
                     int i = 0;
 
                     for (WitherSkeleton witherSkeleton : spawnW.values()) {
-                        player.sendMessage("2");
                         if(witherSkeleton == null) continue;
-                        player.sendMessage("3");
                         double angle = 2 * Math.PI * i / num;
                         Location location = entity.getLocation();
                         double x = entity.getX() + radius * Math.cos(angle);
