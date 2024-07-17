@@ -1,0 +1,4 @@
+name: Control
+version: '${version}'
+main: me.yenu.control.Control
+api-version: '1.20'
